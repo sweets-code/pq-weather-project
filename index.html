@@ -4,56 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>My weather application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+<title>My weather application</title>
   </head>
-  <html>
+  <body>
     <body>
       <div class="weather-box">
-        <header>
-          <form id="search-form">
-            <input
-              type="search"
-              placeholder="Enter a city.."
-              class="search-city"
-              id="city-input"
-              required
-            />
-            <input type="submit" value="Search" class="search-button" />
-          </form>
-        </header>
-        <main>
-          <div class="current-weather">
-            <div>
-              <h1 class="current-city" id="current-city">Paris</h1>
-              <p class="current-weather-details">
-                <span id="current-date"> Saturday 15:32, moderate rain </span>
-                <br />
-                Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-              </p>
-            </div>
-            <div class="current-temperature">
-              <span class="current-temperature-emoji">☀️</span>
-              <span class="current-temperature-text"> 14</span>
-              <span class="current-temperature-unit">°C</span>
-            </div>
+      <header>
+        <form id = "search-form">
+          <input type="search" placeholder="Enter a city.." class="search-city" id = "city-input" required />
+          <input type="submit" value="Search" class="search-button"/>
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class = "current-city" id = "current-city">Paris</h1>
+            <p class="current-weather-details">
+              <span id="current-date"> Saturday 15:32, moderate rain </span> <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
           </div>
-        </main>
-        <footer>
-          <p>
-            This project was coded by
-            <a href="#" target="_blank">Pearly Quah</a> and is
-            <a href="#" target="_blank"> on GitHub</a> and
-            <a href="#" target="_blank">hosted on Netlify</a>
-          </p>
-        </footer>
-      </div>
-      <script src="src/script.js"></script>
-    </body>
-  </html>
+          <div class="current-temperature">
+            <span class="current-temperature-emoji">☀️</span>
+            <span class="current-temperature-text" id = "current-temperature-text"> 14</span>
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Pearly Quah</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/script.js">
+    </script>
+  </body>
 </html>
